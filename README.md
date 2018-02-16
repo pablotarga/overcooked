@@ -8,7 +8,7 @@ Run `docker container run --name overcooked -d -u=$UID:$(id -g $USER) -v $(pwd):
 
 With the container running we can...
 
-Run `docker exec -ti overcooked ng serve --host=0.0.0.0` to start the server
+Run `docker exec -ti overcooked npm start` to start the server
 
 Run `docker exec -ti overcooked ng g directive|pipe|service|class|guard|interface|enum|module`
 
