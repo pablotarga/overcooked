@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PageConfigService } from './page-config.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Overcooked';
+  vm:PageConfigService;
+
+  constructor(page: PageConfigService){
+    this.vm = page;
+  }
 }
